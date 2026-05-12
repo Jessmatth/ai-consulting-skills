@@ -74,4 +74,4 @@ MIT
 
 ## Credits
 
-Adapted from [The Craft of AI](https://www.thecraftofai.com/). Built with Claude. Skill framework via Anthropic's skill-creator.
+Built with Claude. Skill framework via Anthropic's skill-creator. Adapted from [The Craft of AI](https://www.thecraftofai.com/).
