@@ -1,0 +1,77 @@
+# Enterprise AI Consulting Skills
+
+Ten Claude skills that replicate the analytical work Tier-1 consulting firms charge $1.5M to $2M to deliver during an enterprise AI initiative.
+
+Each skill takes the discovery artifacts an enterprise already has (org charts, SOPs, schemas, audit findings, financial baselines, vendor pricing) and produces the kind of analysis a senior consultant would put in front of a steering committee. The output is specific to the documents you provide. Generic AI strategy advice is the failure mode these skills are designed to avoid.
+
+## What's in here
+
+| # | Skill | What it does | Big-4 equivalent |
+|---|---|---|---|
+| 1 | ai-readiness-assessment | Ruthless gap analysis across data, security, and org structure | $75k to $150k |
+| 2 | workflow-acceleration-analysis | SOP vs. reality comparison with automation candidate scoring | $150k to $250k |
+| 3 | ai-use-case-prioritization | 4-bucket framework that kills distractions and funds Lighthouse Pilots | $200k to $300k |
+| 4 | build-vs-buy-framework | 3-year TCO comparison with a hard recommendation | $100k to $200k |
+| 5 | ai-payback-business-case | Single conservative scenario, 30% Change Management Tax, payback in months | $150k to $250k |
+| 6 | target-operating-model-design | Role evolution, handoff map, and human-in-the-loop protocol | $150k |
+| 7 | data-readiness-and-gap-analysis | Schema-level audit ending in 3 prioritized engineering tasks | $200k |
+| 8 | ai-threat-modeling-and-risk-assessment | Threat vectors, compliance exposure, and required guardrails | $175k |
+| 9 | ai-business-case-and-roi-model | Full NPV, IRR, three scenarios, and CFO objection handling | $100k |
+| 10 | ai-pilot-implementation-roadmap | Sprint Zero plus a 12-week pilot plan with critical path dependencies | $150k |
+
+## How to use
+
+Each skill is a `.skill` file. Install it once in Claude and it triggers automatically when you ask for that type of analysis. You provide the input documents; the skill produces the report.
+
+The skills are designed to chain. The output of one is often the input to the next. Run them in sequence for a full enterprise AI initiative, or use any of them standalone.
+
+Recommended sequence for a full engagement:
+
+1. Readiness Assessment tells you if you can deploy AI at all
+2. Workflow Analysis finds the bottlenecks worth attacking
+3. Prioritization picks the Lighthouse Pilots
+4. Build vs. Buy, Operating Model, Threat Modeling, and Data Readiness inform the architecture decision
+5. The two financial cases serve different rooms (payback case for budget approval; full ROI model for capital expenditure review)
+6. Implementation Roadmap puts the plan on a calendar
+
+## What these skills won't do
+
+These are decision-support tools, not decision-makers. A skill can model risk. It can't absorb legal liability or be fired.
+
+## Output conventions
+
+All 10 skills share the same writing rules: active voice, short paragraphs, no filler vocabulary, sentence-case headers, digits for numbers, and ruthless specificity to the documents provided. The skills won't pad analysis with generic advice, won't soften findings to spare feelings, and won't pretend hard problems are easy.
+
+Output defaults to inline markdown. Each skill can produce a saved `.md` artifact for executive review. The financial skills (5 and 9) can produce `.xlsx` with editable assumptions. Any skill can produce `.docx` on request.
+
+## Installation
+
+1. Download the `.skill` files from this repo
+2. In Claude, go to Settings → Capabilities → Skills
+3. Upload each `.skill` file
+4. Skills will trigger automatically on relevant prompts, or you can call them by name
+
+## Repo structure
+
+```
+.
+├── ai-readiness-assessment.skill
+├── workflow-acceleration-analysis.skill
+├── ai-use-case-prioritization.skill
+├── build-vs-buy-framework.skill
+├── ai-payback-business-case.skill
+├── target-operating-model-design.skill
+├── data-readiness-and-gap-analysis.skill
+├── ai-threat-modeling-and-risk-assessment.skill
+├── ai-business-case-and-roi-model.skill
+├── ai-pilot-implementation-roadmap.skill
+└── README.md
+```
+
+## License
+
+MIT
+
+## Credits
+
+Built with Claude. Skill framework via Anthropic's skill-creator.
