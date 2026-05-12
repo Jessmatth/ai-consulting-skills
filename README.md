@@ -19,6 +19,117 @@ Each skill takes the discovery artifacts an enterprise already has (org charts, 
 | 9 | ai-business-case-and-roi-model | Full NPV, IRR, three scenarios, and CFO objection handling | $100k |
 | 10 | ai-pilot-implementation-roadmap | Sprint Zero plus a 12-week pilot plan with critical path dependencies | $150k |
 
+## Skill details
+
+### 1. ai-readiness-assessment
+
+**Goal:** Tell you whether your organization can deploy AI today, or what foundational work has to happen first.
+
+**Inputs:**
+- Current organizational chart
+- Technical architecture documentation
+- Recent IT audit summaries
+- Data strategy overview
+
+**Outputs:** Data infrastructure reality check, security and governance red flags, organizational silos, and 3 foundational fixes with owner and timeline.
+
+### 2. workflow-acceleration-analysis
+
+**Goal:** Compare official SOPs against how the work actually happens, surface shadow IT, and identify the highest-ROI automation candidates.
+
+**Inputs:**
+- Official Standard Operating Procedures (numbered or sectioned)
+- Raw transcripts of frontline employees describing the real workflow
+
+**Outputs:** The delta grouped by SOP section, named shadow IT instances with risks, top 5 time-wasters ranked by weekly FTE hours, and 5-8 automation candidates scored 1-10 on feasibility.
+
+### 3. ai-use-case-prioritization
+
+**Goal:** Sort a backlog of candidate AI use cases into what to fund, delay, and kill, with the top Lighthouse Pilots justified by business metrics.
+
+**Inputs:**
+- Raw list of potential AI use cases
+- Bottleneck analyses or workflow assessments
+- Top strategic goals for the year (OKRs, board priorities, or named initiatives)
+
+**Outputs:** The Sandbox, the Distractions, the Incremental Wins, and 2-4 Lighthouse Pilots with metric-backed justification.
+
+### 4. build-vs-buy-framework
+
+**Goal:** A hard recommendation on building, buying, or running a hybrid for a specific AI pilot.
+
+**Inputs:**
+- The chosen Lighthouse Pilot
+- Internal engineering capacity
+- Feature and pricing data for off-the-shelf vendor solutions
+
+**Outputs:** Commodity vs IP-defensible component split, 3-year TCO for both paths, and a hard recommendation in the first sentence of the final section.
+
+### 5. ai-payback-business-case
+
+**Goal:** A single conservative payback story designed to clear budget review without a fight.
+
+**Inputs:**
+- Baseline costs of the current manual workflow
+- Estimated costs and time savings of the AI-automated replacement
+
+**Outputs:** Single conservative scenario with soft savings excluded from the math, a 30% Change Management Tax applied to budget and timeline, and the top 3 aggressive CFO challenges with data-backed answers.
+
+### 6. target-operating-model-design
+
+**Goal:** Specify exactly how the org changes when an AI agent ships into a workflow.
+
+**Inputs:**
+- Current state workflow
+- Existing roles involved in that workflow
+- The specific AI agents being introduced
+
+**Outputs:** Role evolution from execution to validation, net-new roles required, an AI-to-human and human-to-AI handoff map, and a human-in-the-loop escalation protocol for edge cases and failures.
+
+### 7. data-readiness-and-gap-analysis
+
+**Goal:** Audit the data estate against the AI workflow's real needs and surface what data engineering has to do before production.
+
+**Inputs:**
+- Current data estate documentation (schemas, API endpoints)
+- Target workflow
+- Data inputs required by the proposed AI agents
+
+**Outputs:** Missing data the AI cannot access, structure deficits where unstructured data must be made machine-readable, latency risks that break real-time processing, and the top 3 data engineering tasks required before production.
+
+### 8. ai-threat-modeling-and-risk-assessment
+
+**Goal:** Surface the security, compliance, and hallucination risks of a specific AI workflow plus the controls needed before deployment.
+
+**Inputs:**
+- Proposed AI workflow
+- System architecture
+- Data types processed
+
+**Outputs:** LLM and agent threat vectors, compliance exposure across GDPR, CCPA, and industry regulations, hallucination blast radius for silent failure at the highest-risk step, and the required guardrails, access controls, and logging mechanisms.
+
+### 9. ai-business-case-and-roi-model
+
+**Goal:** Full financial model with scenarios and CFO objection handling for capital expenditure review.
+
+**Inputs:**
+- Current baseline costs of the manual workflow
+- Estimated costs and time savings of the AI-automated replacement
+
+**Outputs:** NPV, IRR, and payback period in months; Conservative, Base, and Aggressive scenarios; hard vs soft ROI separated explicitly; and the top 3 skeptical CFO objections with specific responses.
+
+### 10. ai-pilot-implementation-roadmap
+
+**Goal:** Put the chosen pilot on a calendar with sprint-level deliverables, dependencies, and resource allocation.
+
+**Inputs:**
+- Target workflow
+- Data gaps (output of skill 7)
+- Risk controls (output of skill 8)
+- Operating model changes (output of skill 6)
+
+**Outputs:** Sprint Zero prerequisites for the 2 weeks before any code, a 12-week pilot plan in 6 two-week sprints with deliverables and success criteria, critical path dependencies that will block the project if delayed, and resource allocation per sprint.
+
 ## How to use
 
 Each skill is a `.skill` file. Install it once in Claude and it triggers automatically when you ask for that type of analysis. You provide the input documents; the skill produces the report.
